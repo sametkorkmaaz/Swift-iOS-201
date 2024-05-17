@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GezilecekYerlerCell" customModule="CollectionViewLab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mLt-gu-3pB">
+                        <rect key="frame" x="0.0" y="29" width="400" height="428"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gün No:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni4-ZX-cFL">
+                        <rect key="frame" x="0.0" y="5" width="400" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMI-A4-eMr">
+                        <rect key="frame" x="0.0" y="457" width="400" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="utj-gM-pE5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k27-o7-V42">
+                        <rect key="frame" x="0.0" y="479" width="400" height="121"/>
+                        <color key="backgroundColor" red="0.83554713889999999" green="0.86078912019999998" blue="0.340444945" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="121" id="Zez-P8-jtT"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.63529413940000001" green="0.63137257099999999" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="aMI-A4-eMr" firstAttribute="top" secondItem="mLt-gu-3pB" secondAttribute="bottom" id="29f-hi-eZt"/>
+                <constraint firstItem="mLt-gu-3pB" firstAttribute="trailing" secondItem="aMI-A4-eMr" secondAttribute="trailing" id="4hc-J0-ldn"/>
+                <constraint firstAttribute="trailing" secondItem="aMI-A4-eMr" secondAttribute="trailing" symbolic="YES" id="4n1-wI-KQB"/>
+                <constraint firstItem="mLt-gu-3pB" firstAttribute="leading" secondItem="aMI-A4-eMr" secondAttribute="leading" id="Eqe-4w-knQ"/>
+                <constraint firstItem="ni4-ZX-cFL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FDr-pl-vjv"/>
+                <constraint firstItem="mLt-gu-3pB" firstAttribute="top" secondItem="ni4-ZX-cFL" secondAttribute="bottom" constant="3" id="FjW-xz-f08"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="k27-o7-V42" secondAttribute="trailing" id="Jwi-Wz-azf"/>
+                <constraint firstItem="mLt-gu-3pB" firstAttribute="top" secondItem="ni4-ZX-cFL" secondAttribute="bottom" constant="3" id="bSQ-u3-kCb"/>
+                <constraint firstAttribute="trailing" secondItem="ni4-ZX-cFL" secondAttribute="trailing" id="ehi-iD-u6U"/>
+                <constraint firstItem="k27-o7-V42" firstAttribute="top" secondItem="aMI-A4-eMr" secondAttribute="bottom" constant="1" id="jGQ-0J-hvB"/>
+                <constraint firstItem="k27-o7-V42" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="mqc-q0-x6Y"/>
+                <constraint firstItem="ni4-ZX-cFL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="qFl-A9-csB"/>
+                <constraint firstItem="aMI-A4-eMr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" symbolic="YES" id="xd4-zu-tCc"/>
+                <constraint firstItem="k27-o7-V42" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" constant="34" id="yn2-mo-U7M"/>
+            </constraints>
+            <size key="customSize" width="143" height="254"/>
+            <connections>
+                <outlet property="aciklamaLabel" destination="k27-o7-V42" id="wiW-eI-ttR"/>
+                <outlet property="gunNoLabel" destination="ni4-ZX-cFL" id="2yG-C2-12f"/>
+                <outlet property="image_Gezi" destination="mLt-gu-3pB" id="pbp-k9-Pe5"/>
+                <outlet property="konumLabel" destination="aMI-A4-eMr" id="JD8-Ev-Ibi"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="-83.098591549295776"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
